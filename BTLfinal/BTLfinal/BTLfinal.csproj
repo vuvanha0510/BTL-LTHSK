@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A64539B-8718-434C-9C2E-0930351CBC25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTLfinal</RootNamespace>
+    <AssemblyName>BTLfinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoDSSV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoDSSV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Baocaosach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baocaosach.Designer.cs">
+      <DependentUpon>Baocaosach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baocaosoluong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baocaosoluong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="baocaoSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaoSV.Designer.cs">
+      <DependentUpon>baocaoSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTacGia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoTacGia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="baocaoTG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaoTG.Designer.cs">
+      <DependentUpon>baocaoTG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaocaoTheLoai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaocaoTheLoai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTheMuon1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoTheMuon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="baocaoTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baocaoTL.Designer.cs">
+      <DependentUpon>baocaoTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaocaoTM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaocaoTM.Designer.cs">
+      <DependentUpon>BaocaoTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bcSach.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bcSach.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bcTacGia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bcTacGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bcthemuon.cs">
+      <DependentUpon>bcthemuon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bcthemuon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bcthemuon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bcTL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bcTL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuchinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuchinh.Designer.cs">
+      <DependentUpon>menuchinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLSV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sach.Designer.cs">
+      <DependentUpon>Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinhvien.Designer.cs">
+      <DependentUpon>Sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacGia.Designer.cs">
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheLoai.Designer.cs">
+      <DependentUpon>TheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheMuon.Designer.cs">
+      <DependentUpon>TheMuon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoDSSV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoDSSV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baocaosach.resx">
+      <DependentUpon>Baocaosach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baocaosoluong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Baocaosoluong.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaoSV.resx">
+      <DependentUpon>baocaoSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTacGia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoTacGia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaoTG.resx">
+      <DependentUpon>baocaoTG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaocaoTheLoai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaocaoTheLoai.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTheMuon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoTheMuon1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baocaoTL.resx">
+      <DependentUpon>baocaoTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaocaoTM.resx">
+      <DependentUpon>BaocaoTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuchinh.resx">
+      <DependentUpon>menuchinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sach.resx">
+      <DependentUpon>Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinhvien.resx">
+      <DependentUpon>Sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacGia.resx">
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheLoai.resx">
+      <DependentUpon>TheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheMuon.resx">
+      <DependentUpon>TheMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bcSach.xsc">
+      <DependentUpon>bcSach.xsd</DependentUpon>
+    </None>
+    <None Include="bcSach.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bcSach.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bcSach.xss">
+      <DependentUpon>bcSach.xsd</DependentUpon>
+    </None>
+    <None Include="bcTacGia.xsc">
+      <DependentUpon>bcTacGia.xsd</DependentUpon>
+    </None>
+    <None Include="bcTacGia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bcTacGia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bcTacGia.xss">
+      <DependentUpon>bcTacGia.xsd</DependentUpon>
+    </None>
+    <None Include="bcthemuon.xsc">
+      <DependentUpon>bcthemuon.xsd</DependentUpon>
+    </None>
+    <None Include="bcthemuon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bcthemuon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bcthemuon.xss">
+      <DependentUpon>bcthemuon.xsd</DependentUpon>
+    </None>
+    <None Include="bcTL.xsc">
+      <DependentUpon>bcTL.xsd</DependentUpon>
+    </None>
+    <None Include="bcTL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bcTL.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bcTL.xss">
+      <DependentUpon>bcTL.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLSV.xsc">
+      <DependentUpon>QLSV.xsd</DependentUpon>
+    </None>
+    <None Include="QLSV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QLSV.xss">
+      <DependentUpon>QLSV.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
